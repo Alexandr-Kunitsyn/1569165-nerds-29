@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Куницын](https://up.htmlacademy.ru/htmlcss/29/user/1569165).
-* Наставник: `Неизвестно`.
+* Наставник: `Вадим Новаш`.
 
 ---
 
@@ -28,7 +28,8 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
+Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop»,
+чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037927-54ea5116-7bae-11e7-9595-f450cdea1e1c.jpg">
 

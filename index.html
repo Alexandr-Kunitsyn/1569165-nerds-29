@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<header>
-  <nav>
-    <a>
+<body class="page-body">
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип интернет магазина «Nerds»">
     </a>
-    <ul>
+    <ul class="navigation">
       <li><a href="#!">Студия</a></li>
       <li><a href="#!">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
@@ -20,144 +22,151 @@
   </nav>
 </header>
 
-<main>
+<main class="container">
   <h1>Интернет магазина «Nerds»</h1> <!-- заголовок не показываем-->
-  <section class="caruosel">
+  <section class="carousel">
     <ul>
-      <li class="active-slide">
-        <div class="info">
-          <h2>Долго, дорого,<br>скрупулёзно</h2>
-          <p>Математически выверенный дизайн для<br> вашего сайта или мобильного устройства</p>
-          <a href="#!">Узнать больше</a>
-          <div><img src="https://via.placeholder.com/760x431" alt="слайд1"></div>
+      <li class="slide active">
+        <div class="slide-info">
+          <h2 class="slide-title">Долго, дорого,<br>скрупулёзно</h2>
+          <p class="slide-text">Математически выверенный дизайн для<br> вашего сайта или мобильного устройства</p>
+          <a class="slide-link" href="#!">Узнать больше</a>
         </div>
+        <div class="image-wrap"><img src="img/nerds-slide1.png" width="760" height="431" alt="слайд1"></div>
       </li>
-      <li class="hidden-slide">
-        <div class="info">
-          <h2>Любим математику<br>как никто другой</h2>
-          <p>Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
-          <a href="#!">Узнать больше</a>
-          <div><img src="https://via.placeholder.com/760x431" alt="слайд2"></div>
+      <li class="slide">
+        <div class="slide-info">
+          <h2 class="slide-title">Любим математику<br>как никто другой</h2>
+          <p class="slide-text">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций</p>
+          <a class="slide-link" href="#!">Узнать больше</a>
         </div>
+        <div class="image-wrap"><img src="img/nerds-slide2.png" width="760" height="431" alt="слайд2"></div>
       </li>
-      <li class="hidden-slide">
-        <div class="info">
-          <h2>Только ночь,<br>только хардкор</h2>
-          <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-          <a href="#!">Узнать больше</a>
-          <div><img src="https://via.placeholder.com/760x431" alt="слайд3"></div>
+      <li class="slide">
+        <div class="slide-info">
+          <h2 class="slide-title">Только ночь,<br>только хардкор</h2>
+          <p class="slide-text">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.
+          </p>
+          <a class="slide-link" href="#!">Узнать больше</a>
         </div>
+        <div class="image-wrap"><img src="img/nerds-slide3.png" width="760" height="431" alt="слайд3"></div>
       </li>
     </ul>
-    <button type="button"></button>
-    <button type="button"></button>
-    <button type="button"></button>
+    <div class="controls">
+      <button type="button"></button>
+      <button type="button"></button>
+      <button type="button"></button>
+    </div>
   </section>
 
-  <section>
-    <ul>
-      <li class="websites">  <!--red-->
-        <div><img src="https://via.placeholder.com/300x146" alt="Веб-сайты"></div>
+  <section class="products">
+    <ul class="products-items">
+      <li class="item websites">  <!--red-->
+        <div><img src="img/products-websites.png" width="300" height="146" alt="Веб-сайты"></div>
         <h2>Веб-сайты</h2>
         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="">Заказать</a>
+        <a class="button" href="#!">Заказать</a>
       </li>
-      <li class="applications"> <!--green-->
-        <div><img src="https://via.placeholder.com/300x146" alt="Приложения"></div>
+      <li class="item applications"> <!--green-->
+        <div><img src="img/products-applications.png" width="300" height="146" alt="Приложения"></div>
         <h2>Приложения</h2>
         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="">Заказать</a>
+        <a class="button" href="#!">Заказать</a>
       </li>
-      <li class="presentations"> <!--yellow-->
-        <div><img src="https://via.placeholder.com/300x146" alt="Презентации"></div>
+      <li class="item presentations"> <!--yellow-->
+        <div><img src="img/products-presentations.png" width="300" height="146" alt="Презентации"></div>
         <h2>Презентации</h2>
         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a href="">Заказать</a>
+        <a class="button" href="#!">Заказать</a>
       </li>
     </ul>
   </section>
 
-  <section class="wrepper_about-us_statistics">
-    <section class="about">
+  <section class="wrapper-about-us-statistics">
+    <section class="about-us">
       <h2>О нас</h2> <!-- заголовок не показываем-->
       <p>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</p>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
         превыше креатива. Работаем не покладая рук, как роботы</p>
       <p>Выполняем заказы на разработку</p>
-      <ul>
-        <li>
+      <ul class="development-list">
+        <li class="development-item">
           Веб-сайтов любой сложности
         </li>
-        <li>
+        <li class="development-item">
           Мобильных приложений для iOS и Android
         </li>
-        <li>
+        <li class="development-item">
           Слайдшоу и видео для корпоративных презентаций
         </li>
       </ul>
     </section>
     <section class="statistics">
       <h2>Статистика</h2> <!--Скрытый заголовок-->
-      <div><img src="https://via.placeholder.com/360x208" alt="лого"></div>
+      <div><img src="img/illustration-statistics.png" width="360" height="208" alt=""></div>
       <p>с 2004 года Любим точность во всем:</p>
-      <dl>
+      <dl class="statistics-list">
         <div>
-          <dt>146%</dt>
-          <dd>Уровень самоотдачи</dd>
+          <dt class="statistics-item">146%</dt>
+          <dd class="statistics-item-detail">Уровень самоотдачи</dd>
         </div>
         <div>
-          <dt>100%</dt>
-          <dd>Соблюдение сроко</dd>
+          <dt class="statistics-item">100%</dt>
+          <dd class="statistics-item-detail">Соблюдение сроко</dd>
         </div>
         <div>
-          <dt>50%</dt>
-          <dd>Минимальная предоплата</dd>
+          <dt class="statistics-item">50%</dt>
+          <dd class="statistics-item-detail">Минимальная предоплата</dd>
         </div>
       </dl>
     </section>
   </section>
   <section class="partners">
-    <ul>
-      <li>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+    <ul class="partners-list">
+      <li class="partners-item">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/html-academy.svg" width="199"
+                                                                                height="67.82" alt="HTML академия">HTML
+          Academy</a>
       </li>
-      <li>
-        <a href="#!" target="_blank">Borodinski</a>
+      <li class="partners-item">
+        <a href="#!" target="_blank"><img src="img/borodinski_basic.png" alt="Бородинский - салон для мужчин"
+                                          width="209" height="90">Borodinski</a>
       </li>
-      <li>
-        <a href="#!" target="_blank">Pink</a>
+      <li class="partners-item">
+        <a href="#!" target="_blank"><img src="img/pink-basic.png" alt="Сайт приложений" width="185"
+                                          height="52">Pink</a>
       </li>
-      <li>
-        <a href="#!" target="_blank">Mishka</a>
+      <li class="partners-item">
+        <a href="#!" target="_blank"><img src="img/mishka-basic.png" alt="Вязанные игрушки">Mishka</a>
       </li>
     </ul>
   </section>
-
 </main>
 
-<footer>
+<footer class="main-footer">
   <section class="contacts">
     <h2>контакты</h2> <!--скрыть заголовок-->
-    <div class="map">
-      <div><img src="https://via.placeholder.com/1440x416" alt="карта"></div>
-    </div>
+    <section class="map">
+      <div><img src="img/nerds-map.png" alt="карта проезда" width="1440" height="416"></div>
+    </section>
     <address>
-      <p>nerds design studio</p>
+      <p class="title-studio">nerds design studio</p>
       <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p><a href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
-      <p><a href="write-us.html">напишите нам</a></p>
+      <p><a class="contacts-phone" href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
+      <p><a class="popup-window" href="#popup-window">напишите нам</a></p>
+      <!-- ??? можно оставить в блоке <address> ??? -->
     </address>
   </section>
-  <section>
-    <ul class="socials">
-      <li>
-        <a href="#!">Вконтакте</a>
+  <section class="socials">
+    <ul class="socials-list">
+      <li class="socials-list-item">
+        <a class="socials-link" href="#!">Вконтакте</a>
       </li>
-      <li>
-        <a href="#!">Фейсбук</a>
+      <li class="socials-list-item">
+        <a class="socials-link" href="#!">Фейсбук</a>
       </li>
-      <li>
-        <a href="#!">Инстаграм</a>
+      <li class="socials-list-item">
+        <a class="socials-link" href="#!">Инстаграм</a>
       </li>
     </ul>
     <div class="discount">
@@ -166,6 +175,24 @@
     </div>
   </section>
 </footer>
+<section class="popup-window">
+  <div>
+    <h2 class="title">Напишите нам</h2>
+  </div>
+  <div>
+    <button type="button">закрыть</button>
+  </div>
+  <div>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <label for="username">Ваше имя:</label>
+      <input type="text" id="username" value="Имя Фамилия">
+      <label for="user-email">Ваше имя:</label>
+      <input type="text" id="user-email" value="email@example.com">
+      <label for="message">Текст письма:</label>
+      <textarea name="message" id="message" rows="4">В свободной форме</textarea>
+    </form>
+  </div>
+</section>
 </body>
 </html>
 

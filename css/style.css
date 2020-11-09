@@ -12,6 +12,7 @@
     --basic-gold-darken: #EAB534;
     --basic-gold-dark: #E5A722;
   --basic-gray-light: #E1E1E1;
+  --basic-gray-light-top: #EEEEEE;
   --darken-gray: #666666;
   --darken: #283136;
   --basic-black-opacity: rgb(0, 0,0,0.3);
@@ -67,6 +68,14 @@ img {
   padding-left: 0;
 }
 
+.logo {
+  margin-top: 8px;
+}
+
+.page-header {
+  background-color: var(--basic-gray-light-top);
+}
+
 /* main navigation */
 
 .main-navigation {
@@ -75,6 +84,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  margin-top: 48px;
   text-transform: uppercase;
   color: var(--basic-black);
   background-color: transparent;
@@ -129,6 +139,9 @@ img {
 
 /* carousel */
 
+.carousel-slides {
+/*  display: flex; */
+}
 
 .slide-title {
   margin: 0;
@@ -160,6 +173,12 @@ img {
 
 /* products */
 
+.products-list {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 80px;
+  margin-right: 100px;
+}
 
 .title-products {
   margin: 0;
@@ -169,8 +188,9 @@ img {
   text-transform: uppercase;
 }
 
-.text-products {
-  margin:0;
+
+.title-products {
+margin: 25px 0 16px 0;
 }
 
 .websites {
@@ -183,8 +203,14 @@ img {
   background: var(--basic-gold);
 }
 
+.text-products {
+  margin-bottom: 30px;
+}
+
 .button {
   display: flex;
+  margin-top: 30px;
+  margin-bottom: 80px;
   width: 160px;
   height: 50px;
   border-radius: 3px;
@@ -200,12 +226,13 @@ img {
 /* About us*/
 .wrapper-about-us-statistics{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
 }
 
+
 .about-us-title {
-  margin: 0;
+  margin-bottom: 32;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -222,9 +249,7 @@ img {
 }
 .development-item {
   position: relative;
-}
-.development-item li {
-  margin-left: 25px;
+  padding-left: 32px;
 }
 
 .development-item::before {
@@ -232,10 +257,11 @@ img {
   position: absolute;
   display: block;
   top: 10px;
+  left: 0px;
   width: 25px;
   height: 2px;
   background-color: var(--basic-red-dark);
-  padding-left: 25px;
+
 }
 .title-list {
   margin: 0;
@@ -249,7 +275,14 @@ img {
 /* statistics*/
 
 .statistics {
-/*  display: flex; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics-list{
+  display: flex;
+  justify-content: center;
 }
 
 .statistics-item {
@@ -293,3 +326,4 @@ img {
 .popup-title {
   margin: 0;
 }
+
